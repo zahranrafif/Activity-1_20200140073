@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Exercise Java 21 Des</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Data ktp ku</div>
+        <hr>
+        <table border="3"
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>no ktp</th>
+                    <th>nama lengkap</th>
+                    <th>alamat</th>
+                </tr>
+            </thead>
+            <tbody th:each="count:${tabel}">
+                <tr>
+                    <td th:text="${count[0]}"></td>
+                    <td th:text="${count[1]}"></td>
+                    <td th:text="${count[2]}"></td>
+                    <td th:text="${count[3]}"></td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+    </body>
+</html>
